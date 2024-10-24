@@ -4,83 +4,71 @@
     padding: 0;
 }
 .nav-list{
+    padding: 15px;
     font-size: 0;
-
 }
 .list-item{
     display: inline-block;
+    background-color: rgb(68, 195, 68);
+    padding: 10px;
     position: relative;
-    padding: 20px;
-    background-color: orangered;
-  
-
+    
 }
 .link{
-    color: white;
     text-decoration: none;
-    font-size: 20px;
-
-
+    font-size: 30px;
+    color: white;
 }
 .sub-nav-list{
     position: absolute;
-    left: 5px;
     display: block;
-    width: 140px;
-
+    
 }
+
 .sub-list-item{
+    background-color: rgb(68, 195, 68);
+    padding: 10px;
+    width: 148px;
     display: none;
-    background-color: orangered;
-    padding: 12px;
     position: relative;
+    top: 10px;
+    left: -10px;
 
-}
-.list-item:hover .sub-list-item{
+ }
+ .list-item:hover .sub-list-item{
     display: block;
-
-}
-.sub-sub-nav-list{
+ }
+ 
+ .sub-sub-nav-list{
     position: absolute;
-    display: block;
-    width: 140px;
-    top: 3px;
+    top: 0;
     left: 140px;
+    display: block;
+    left: 148px;
+
+ }
+
+.sub-sub-list-item{
+    background-color: rgb(68, 195, 68);
+    padding: 10px;
+    width: 140px;
+    display: none;
 
 }
-    .sub-sub-list-item{
-      position: relative;
-        display: none;
-       top: 10px;
-        background-color: orangered;
-        padding: 12px;
-        
-        
-    }
-    .sub-list-item:hover .sub-sub-list-item{
-            display: block;
-    }
 
-    .sub-sub-sub-nav-list{
-        position: absolute;
-        left: 20px;
-        display: block;
-        width: 140px;
-        top: 6px;
-        left: 140px;
-       
-        
-    }
+.sub-list-item:hover .sub-sub-list-item{
+    display: block;
+ }
 
-    .sub-sub-sub-list-item{
-        padding: 12px;
-        background-color: orangered;
-        display: none;
-        
-    }
-    .sub-sub-list-item:hover .sub-sub-sub-list-item{
-        display: block;
+ .list-item:hover, .sub-list-item:hover,.sub-sub-list-item:hover{
+    background-color: rgb(12, 52, 12);
+ }
+p{
+    padding: 15px;
 }
-.sub-list-item:hover, .sub-sub-list-item:hover, .sub-sub-sub-list-item:hover{
-    background-color: rgb(66, 22, 6);
-}
+
+
+
+
+
+
